@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "lukas-necromancy",
+	"version": "${version}",
+	"name": "Luka's Necromancy",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Luka"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/lukas-necromancy/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.luka.necromancy.LukasNecromancy"
+		],
+		"fabric-datagen": [
+			"net.luka.necromancy.LukasNecromancyDataGenerator"
+		],
+		"client": [
+			"net.luka.necromancy.NecromancyClient"
+		]
+	},
+	"mixins": [
+		"lukas-necromancy.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
