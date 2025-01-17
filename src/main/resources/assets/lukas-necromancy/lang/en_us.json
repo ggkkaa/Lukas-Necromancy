@@ -1,4 +1,7 @@
 {
   "item.lukas-necromancy.soulstone": "Soulstone",
-  "item.lukas-necromancy.raw_soulstone": "Raw Soulstone"
+  "item.lukas-necromancy.raw_soulstone": "Raw Soulstone",
+  "item.lukas-necromancy.dark_orb": "Dark Orb",
+
+  "itemgroup.luka_necromancy": "Luka's Necromancy"
 }

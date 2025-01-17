@@ -1,10 +1,8 @@
 package net.luka.necromancy.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.luka.necromancy.LukasNecromancy;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -13,6 +11,8 @@ public class ModItems {
     public static final Item SOULSTONE = registerItem("soulstone",
             new Item(new Item.Settings()));
     public static final Item RAW_SOULSTONE = registerItem("raw_soulstone",
+            new Item(new Item.Settings()));
+    public static final Item DARK_ORB = registerItem("dark_orb",
             new Item(new Item.Settings()));
 
 
@@ -23,11 +23,10 @@ public class ModItems {
     private static void customIngredients(FabricItemGroupEntries entries) {
         entries.add(SOULSTONE);
         entries.add(RAW_SOULSTONE);
+        entries.add(DARK_ORB);
     }
 
     public static void registerModItems() {
         LukasNecromancy.LOGGER.info("Registering mod items for " + LukasNecromancy.MOD_ID);
-
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::customIngredients);
     }
 }
