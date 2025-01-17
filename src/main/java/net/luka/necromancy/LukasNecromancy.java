@@ -2,7 +2,7 @@ package net.luka.necromancy;
 
 import net.fabricmc.api.ModInitializer;
 
-import net.minecraft.server.MinecraftServer;
+import net.luka.necromancy.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -12,6 +12,6 @@ public class LukasNecromancy implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+        ModItems.registerModItems();
 	}
 }
