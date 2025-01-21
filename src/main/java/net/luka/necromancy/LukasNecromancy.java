@@ -17,6 +17,6 @@ public class LukasNecromancy implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 
 		ModItems.registerModItems();
-
+		ModBlocks.registerModBlocks();
 	}
 }
