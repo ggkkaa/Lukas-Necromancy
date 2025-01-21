@@ -2,6 +2,7 @@ package net.luka.necromancy.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.luka.necromancy.LukasNecromancy;
+import net.luka.necromancy.block.ModBlocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -17,6 +18,7 @@ public class ModItemGroups {
                         entries.add(ModItems.SOULSTONE);
                         entries.add(ModItems.RAW_SOULSTONE);
                         entries.add(ModItems.DARK_ORB);
+                        entries.add(ModBlocks.BLOCK_OF_SOULSTONE);
                     }).build());
 
     public static void registerItemGroups() {
