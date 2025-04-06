@@ -15,6 +15,7 @@ public class ModItemGroups {
             Identifier.of(LukasNecromancy.MOD_ID, "lukas_necromancy"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.luka_necromancy"))
                     .icon(() -> new ItemStack(ModItems.SOULSTONE)).entries((displayContext, entries) -> {
+                        entries.add(ModItems.CHAINSAW);
                         entries.add(ModItems.SOULSTONE);
                         entries.add(ModItems.RAW_SOULSTONE);
                         entries.add(ModItems.DARK_ORB);

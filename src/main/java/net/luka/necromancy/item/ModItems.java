@@ -2,6 +2,7 @@ package net.luka.necromancy.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.luka.necromancy.LukasNecromancy;
+import net.luka.necromancy.item.custom.ChainsawItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -14,6 +15,8 @@ public class ModItems {
             new Item(new Item.Settings()));
     public static final Item DARK_ORB = registerItem("dark_orb",
             new Item(new Item.Settings()));
+
+    public static final Item CHAINSAW = registerItem("chainsaw", new ChainsawItem(new Item.Settings().maxDamage(32)));
 
 
     private static Item registerItem(String name, Item item) {
